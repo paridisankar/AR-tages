@@ -31,3 +31,33 @@ Authors
 
 See the AUTHORS file for a full list of contributors.
 
+And for setting the turtlebot enveroment i have used
+
+cd catkin_ws cd src git clone https://github.com/madhu-korada/AR_tag_detection_with_turtlebot3_gazebo.git
+
+cd .. catkin_make
+
+for the ar_turtlebot3 enveroment
+
+and
+
+$ export TURTLEBOT3_MODEL=burger
+
+$ source devel/setup.bash
+
+$ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+
+$ rqt_image_view
+
+$ rosed ar_track_alvar pr2_indiv_no_kinect.launch
+
+$ roslaunch ar_track_alvar pr2_indiv_no_kinect.launch
+
+$ rviz
+
+x-special/nautilus-clipboard
+copy
+file:///home/arunsankar/Pictures/rviz1.png
+
+
+
