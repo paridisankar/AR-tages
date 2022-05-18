@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import rospy
 from geomentry_msgs.msg import Twist, Point
-from ar_track_alvar_msg.msg import AlvarMarkers 
+from ar_track_alvar_msgs.msg import AlvarMarkers 
 
 Turtlebot = Point()
 
@@ -16,16 +16,16 @@ rospy.init_node ("Turtlebot_navigation")
 
 
 markers =rospy.Subscriber ("/ar_pose_marker" , AlvarMarkers, getturTurtlebot)
-move = rospy.Publisher("/aiboERS7/cmd_vel ,Twist, queue_size=1)
+move = rospy.Publisher("/aiboERS7/cmd_vel" ,Twist, queue_size=1)
 
-r = rospy.rate(1)
+r = rospy.Rate(1)
 
 speed = Twist()
 
 while not rospy.is_shutdown():
 
-    speed.linear.x = turtlebot.y / 10
-    speed.anguler.z = turtlebot.x /2
+    speed.linear.x = Turtlebot.y / 10
+    speed.anguler.z = Turtlebot.x / 2
     
     print speed 
     
