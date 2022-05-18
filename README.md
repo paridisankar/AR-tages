@@ -55,9 +55,7 @@ $ roslaunch ar_track_alvar pr2_indiv_no_kinect.launch
 
 $ rviz
 
-x-special/nautilus-clipboard
-copy
-file:///home/arunsankar/Pictures/rviz1.png
+
 
 
 
