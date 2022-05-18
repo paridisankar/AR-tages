@@ -55,6 +55,10 @@ $ roslaunch ar_track_alvar pr2_indiv_no_kinect.launch
 
 $ rviz
 
+and for the ar-track navegation i have created 
+
+
+$ rosrun turtlebot.py
 
 
 
